@@ -1,2 +1,2 @@
 # Digitron
-Mali HTML digitron ogranicenih sposobni sa sljastecim bojama
+Mali HTML digitron ogranicenih sposobnosti sa sljastecim bojama
