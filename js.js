@@ -160,3 +160,24 @@ function tacka()
 {
     document.getElementById("a").value += '.' ;
 }
+
+
+function kvadrat()
+{
+    if(document.getElementById("a").value != ''){
+        document.getElementById("a").value = Math.pow(parseFloat(document.getElementById("a").value), 2);
+    }
+}
+
+function koren(){
+    if(document.getElementById("a").value != ''){
+        document.getElementById("a").value = Math.sqrt(parseFloat(document.getElementById("a").value));
+    }
+
+}
+
+function bekspejs(){
+    if(document.getElementById("a").value != ''){
+        document.getElementById("a").value = document.getElementById("a").value.slice(0,-1);
+    }    
+}
