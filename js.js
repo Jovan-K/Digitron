@@ -2,7 +2,7 @@ var tn = 0;
 var nt = 0;
 var tmnt = 1;
 var tnmt = 1;
-function pretvori()
+function pretvori() // = f-ja
 {
     var input = document.getElementById("a").value;
     var operacija = input.split(" ");
@@ -181,3 +181,82 @@ function bekspejs(){
         document.getElementById("a").value = document.getElementById("a").value.slice(0,-1);
     }    
 }
+
+
+
+
+// Keypress:
+
+
+document.addEventListener('keydown', (event) => {
+    var taster = event.key;
+    if (taster === '1') {
+        jedan();
+        return;
+    }
+    if (taster === '2') {
+        dva();
+        return;
+    }
+    if (taster === '3') {
+        tri();
+        return;
+    }
+    if (taster === '4') {
+        cetiri();
+        return;
+    }
+    if (taster === '5') {
+        pet();
+        return;
+    }
+    if (taster === '6') {
+        sest();
+        return;
+    }
+    if (taster === '7') {
+        sedam();
+        return;
+    }
+    if (taster === '8') {
+        osam();
+        return;
+    }
+    if (taster === '9') {
+        devet();
+        return;
+    }
+    if (taster === '0') {
+        nula();
+        return;
+    }
+    if (taster === '+') {
+        plus();
+        return;
+    }
+    if (taster === '-') {
+        minus();
+        return;
+    }
+    if (taster === '/') {
+        podeljeno();
+        return;
+    }
+    if (taster === '*') {
+        puta(); // madre ;)
+        return;
+    }
+    if (taster === '.') {
+        tacka();
+        return;
+    }
+    if (taster === 'Enter') {
+        event.preventDefault();
+        pretvori();
+        return;
+    }
+    if (taster === 'Backspace') {
+        bekspejs();
+        return;
+    }
+  }, false);
